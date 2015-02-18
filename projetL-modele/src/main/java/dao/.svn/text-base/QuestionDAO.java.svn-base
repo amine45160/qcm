@@ -1,0 +1,244 @@
+package dao;
+
+import dao.data.ConnectivityData;
+import modele.Choice;
+import modele.Question;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by amineboufatah on 24/12/14.
+ */
+public class QuestionDAO extends ConnectivityData implements IQuestionDAO{
+
+    private static QuestionDAO questionDaoInstance ;
+    private Connection connection ;
+    private PreparedStatement preparedStatement ;
+
+    /**
+     * Private Contructor
+     */
+    private QuestionDAO(){
+        connection = super.getConnection();
+    }
+
+    /**
+     * Instance of the DAO
+     * @return QuestionDAO
+     */
+    public static QuestionDAO getInstance(){
+
+        if(questionDaoInstance==null)
+        {
+            questionDaoInstance = new QuestionDAO();
+        }
+        return questionDaoInstance;
+    }
+
+    /**
+     * This method adds a Qcm to the DB
+     * @param idEnseignant
+     * @param thematique
+     * @param questions
+     */
+    public void addQcm(int idEnseignant , int thematique , List<Question> questions){
+        PreparedStatement preparedStatement1 , preparedStatement2 ;
+        String query_qcm = "INSERT INTO QUESTIONNAIRES.QCM ( idThematique , idUtilisateurEn ) VALUES ( ? , ? )" ;
+        String query_question = "INSERT INTO QUESTIONNAIRES.QUESTION (idQcm , contenu , timer) VALUES ( ? , ? , ? )";
+        String query_choices = "INSERT INTO QUESTIONNAIRES.CHOIX (idQuestion , choix , isGood ) VALUES ( ? , ? , ? )" ;
+
+        try {
+            preparedStatement = connection.prepareStatement(query_qcm);
+            preparedStatement.setInt(1 , thematique);
+            preparedStatement.setInt(2 , idEnseignant);
+            int status = preparedStatement.executeUpdate();
+            if (status == 1){
+              int maxQcm = getMax(1);
+              int maxQuestion = getMax(2);
+
+                preparedStatement1 = connection.prepareStatement(query_question);
+                preparedStatement2 = connection.prepareStatement(query_choices);
+
+                for (int i = 0 ; i<questions.size() ; i++){
+                    modele.Question question = questions.get(i);
+                    preparedStatement1.setInt(1,maxQcm);
+                    preparedStatement1.setString(2 , question.getContenuQuestion());
+                    preparedStatement1.setInt(3, question.getTime());
+                    preparedStatement1.executeUpdate();
+
+                    for (int j = 0 ; j < question.getChoices().size() ; j++ ) {
+                        Choice choice =(Choice) question.getChoices().get(j);
+                        preparedStatement2.setInt(1 , maxQuestion + 1 );
+                        preparedStatement2.setString(2, choice.getContenuChoice());
+
+                        if (choice.getIsGoodAnswer()) {
+                            preparedStatement2.setInt(3, 1);
+                        }else{
+                            preparedStatement2.setInt(3,0);
+                        }
+
+                        preparedStatement2.executeUpdate();
+                    }
+                    maxQuestion = maxQuestion + 1 ;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Gets the max Id
+     * @param i
+     * @return int
+     */
+    public int getMax(int i){
+        connection = super.getConnection();
+        ResultSet resultSet ;
+        String query = "";
+
+        switch (i){
+            case 1 : query = "SELECT MAX(idQcm) from Questionnaires.QCM";
+                break;
+            case 2 : query = "SELECT MAX(idQuestion) from Questionnaires.Question";
+                break;
+            case 3 : query = "SELECT MAX(idThematique) from Questionnaires.QCM";
+                break;
+        }
+
+        try {
+            preparedStatement = connection.prepareStatement(query);
+            resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()){
+                return resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1 ;
+    }
+
+    /**
+     * Gets ID of the last QCM
+     * @param thematique
+     * @return int
+     */
+    public int getMaxQcmByLevel(int thematique){
+        String query = "SELECT MAX(idQcm) FROM Questionnaires.QCM where idThematique = ?";
+        ResultSet resultSet;
+        try {
+            preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1,thematique);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                return resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1 ;
+    }
+
+
+    /**
+     * Gets all the question according to the Thematique
+     * @param thematique
+     * @return list
+     */
+    public List<Question> getQuestionsByThematique(int thematique){
+        int max = getMaxQcmByLevel(thematique);
+
+        String query_questions = "SELECT * FROM Questionnaires.QCM join Questionnaires.Question " +
+                "on Questionnaires.QCM.idQcm = Questionnaires.Question.idQcm where idThematique = ? and Questionnaires.QCM.idQcm = ?";
+
+        String query_responses = "SELECT * FROM Questionnaires.Choix where idQuestion = ? " ;
+        PreparedStatement preparedStatementResponses ;
+        ResultSet resultSet ;
+        ResultSet resultSetResp ;
+        List<Question> questions = new ArrayList<modele.Question>();
+        int cp = 0 ;
+        try {
+            preparedStatement = connection.prepareStatement(query_questions);
+            preparedStatementResponses = connection.prepareStatement(query_responses);
+            preparedStatement.setInt(1 , thematique);
+            preparedStatement.setInt(2,max);
+            resultSet = preparedStatement.executeQuery();
+
+
+            while(resultSet.next()){
+                cp++;
+                Question q = new Question();
+                List<Choice> choicesList = new ArrayList<Choice>();
+                q.setContenuQuestion(resultSet.getString("contenu"));
+                q.setIdQuestion(resultSet.getInt("idQuestion"));
+                q.setTime(resultSet.getInt("timer"));
+                q.setIdQcm(resultSet.getInt("idQcm"));
+                preparedStatementResponses.setInt(1, q.getIdQuestion());
+                resultSetResp = preparedStatementResponses.executeQuery();
+
+                while (resultSetResp.next()){
+                    Choice choice = new Choice();
+                    choice.setContenuChoice(resultSetResp.getString("choix"));
+                    choice.setIdQuestion(resultSetResp.getInt("idQuestion"));
+                    choice.setId(resultSetResp.getInt("idChoix"));
+
+                    if(resultSetResp.getInt("isGood")==1){
+                        choice.setIsGoodAnswer(true);
+                    }else{
+                        choice.setIsGoodAnswer(false);
+                    }
+                    choicesList.add(choice);
+                }
+                q.setChoices(choicesList);
+                questions.add(q);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return questions;
+    }
+
+    /**
+     * This method allows the Admin to launch the Qcm, ie : make it available for the students
+     * @param idQcm
+     */
+    public void launchQcm(int idQcm){
+        String query = "INSERT INTO Questionnaires.SessionQCM (idQcm , activated) values (? , ? );";
+        try {
+            preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1 , idQcm);
+            preparedStatement.setInt(2 , 1);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Method that checks whether the user has already responded to the Qcm or not
+     * @param idUser
+     * @param idQcm
+     * @return boolean
+     */
+    public boolean hasResponded(int idUser , int idQcm){
+        String query = "SELECT * FROM Questionnaires.Score where idUtilisateurEt = ? and idQcm = ?";
+        ResultSet resultSet;
+        try {
+            preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1,idUser);
+            preparedStatement.setInt(2,idQcm);
+            resultSet =preparedStatement.executeQuery();
+            while(resultSet.next()){
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false ;
+    }
+
+}
+
+

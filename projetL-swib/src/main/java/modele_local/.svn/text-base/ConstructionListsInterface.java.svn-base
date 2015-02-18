@@ -1,0 +1,29 @@
+package modele_local;
+
+import modele.Thematiques;
+import views.Thematique;
+
+import java.util.List;
+
+/**
+ * Created by amineboufatah on 25/12/14.
+ */
+public interface ConstructionListsInterface {
+
+
+    /**
+     * This method will return a list of thematiques according to the Level
+     * @param thematiquesModele
+     * @param level
+     * @return
+     */
+    List getThematiquesContent(Thematiques thematiquesModele, int level);
+
+    public List getThematiquesContent(List<modele.Thematique> thematiquesModele );
+
+    //public int getThematiqueByContent(List<Thematique> thematiqueList , String content);
+
+    int getIdThematiqueByContent(List<modele.Thematique> thematiqueList, String content);
+
+
+}

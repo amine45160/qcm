@@ -1,0 +1,172 @@
+package dao;
+
+import dao.data.ConnectivityData;
+import dao.data.CreateDataBase;
+import modele.Thematique;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by amineboufatah on 24/12/14.
+ */
+public class ThematiqueDAO extends ConnectivityData implements IThematiqueDAO{
+
+    private static ThematiqueDAO thematiqueDaoInstance ;
+    private Connection connection ;
+    private PreparedStatement preparedStatement ;
+
+
+
+    /**
+     * Constructor ThematiqueDAO
+     */
+    private ThematiqueDAO(){
+     connection = super.getConnection();
+    }
+
+    /**
+     * returns an instance of the object
+     * @return ThematiqueDAO
+     */
+    public static ThematiqueDAO getInstance(){
+        if(thematiqueDaoInstance==null)
+        {
+            thematiqueDaoInstance = new ThematiqueDAO();
+        }
+        return thematiqueDaoInstance;
+    }
+
+    /**
+     * This method checks whether the Thematique already exists or not
+     * @param content
+     * @return boolean
+     */
+    public boolean thematiqueExists(String content){
+        String query = "SELECT * FROM Questionnaires.Thematique where NomThematique = ? ";
+        ResultSet resultSet ;
+        try {
+            preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1 , content);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+    /**
+     * this function adds a thematique to the DataBase
+     * @param level
+     * @param nomThematique
+     */
+    public void addThematique(int level , String nomThematique){
+
+        String query = "INSERT INTO Questionnaires.Thematique (idFormation , NomThematique) VALUES ( ? , ? ) ;";
+        try {
+            preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1,level);
+            preparedStatement.setString(2 , nomThematique);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+    /**
+     * Gets the thematiques by the Level
+     * @param level
+     * @return
+     */
+    public List<Thematique> getThematiquesByLevel(int level){
+        try {
+           CreateDataBase.getInstance();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        List<Thematique> thematiqueList = new ArrayList<Thematique>();
+        String query = "SELECT * FROM Questionnaires.Thematique where idFormation = ? ";
+
+        try {
+
+            preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1,level);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()){
+
+                Thematique theme = new Thematique();
+                theme.setId(resultSet.getInt(1));
+                theme.setLevel(resultSet.getInt(2));
+                theme.setNom(resultSet.getString(3));
+                thematiqueList.add(theme);
+
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return thematiqueList;
+    }
+
+    /**
+     * This method will return the list of thematiques that are actually activated for users
+     * @param level
+     * @return List
+     */
+    public List<Thematique> getLaunchedThematiques(int level){
+     String query = "SELECT MAX(Questionnaires.SessionQCM.idQcm) as id , Questionnaires.SessionQCM.idQcm , idSessionQcm ,Questionnaires.Thematique.idThematique , nomThematique FROM " +
+        "Questionnaires.SessionQCM natural join Questionnaires.Qcm natural join Questionnaires.Thematique WHERE idFormation = ? and activated =1 group by " +
+        "Questionnaires.Thematique.idThematique;";
+
+        ResultSet resultSet ;
+
+        List<Thematique> thematiqueList = new ArrayList<Thematique>();
+
+        try {
+            preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setInt(1,level);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+
+                int id = resultSet.getInt("idThematique");
+                String nomThematique = resultSet.getString("nomThematique");
+                Thematique thematique = new Thematique(nomThematique , level , id);
+                thematiqueList.add(thematique);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return thematiqueList;
+    }
+
+
+    /**
+     * This method will return the Id Thematique by its content
+     * @param content
+     * @return int
+     */
+    public int getIdThematiqueByContent(String content){
+        String query = "SELECT idThematique FROM Questionnaires.Thematique where NomThematique ='"+content+"'" ;
+        ResultSet resultSet ;
+        Statement statement ;
+        try {
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(query);
+
+            while(resultSet.next()){
+                return resultSet.getInt(1);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1 ;
+    }
+
+}

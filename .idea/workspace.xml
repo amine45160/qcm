@@ -1,0 +1,2620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="e4627015-26e8-40f9-8e67-ca863c23b827" name="Default" comment="Partie RMI -BDD et  Swing V7">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projetL-swib/src/main/java/views/FinQcmViewInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/Questionnaire.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/QuestionnaireDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/ScoreInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/ThematiqueInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/UserInterface.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projetL-swib/projetL-swing.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-struts/src/main/webapp/example" afterPath="$PROJECT_DIR$/projetL-struts/src/main/webapp/example" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerConnexion.java" afterPath="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerConnexion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerQCM.java" afterPath="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerQCM.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerThematique.java" afterPath="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerThematique.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/CreateDataBase.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/CreateDataBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-swib/src/main/java/views/FinQcmView.java" afterPath="$PROJECT_DIR$/projetL-swib/src/main/java/views/FinQcmView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/FormationDAO.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/FormationDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/HandlerDataBase.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/HandlerDataBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/rmi/QcmService.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/rmi/QcmService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/rmi/QcmServiceInterface.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/rmi/QcmServiceInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/QuestionDAO.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/QuestionDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/Score.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/Score.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/Thematique.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/Thematique.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/ThematiqueDAO.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/ThematiqueDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/User.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/modele/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/UserDAO.java" afterPath="$PROJECT_DIR$/projetL-modele/src/main/java/dao/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projetL-swib/src/main/java/modele_local/ValidationForm.java" afterPath="$PROJECT_DIR$/projetL-swib/src/main/java/modele_local/ValidationForm.java" />
+    </list>
+    <list id="63a1c88c-d41b-48ae-849a-1bb5191d33c0" name="New changelist" comment="" />
+    <list id="e81575b5-9d4a-47c6-88de-a167d1b60965" name="Rejected commit: Default" comment="Partie RMI - Swing" />
+    <list id="d8f665da-1039-4d5c-84d7-4221771b00ec" name="Rejected commit: Rejected commit: Default" comment="Partie RMI - Swing" />
+    <list id="b8968703-be71-42e3-8dc0-eee90363064e" name="Rejected commit: Default (3)" comment="Partie RMI -BDD et  Swing V4" />
+    <list id="c4e600fd-e27c-4230-8c72-bc27de03e62b" name="Rejected commit: Rejected commit: Rejected commit: Default (3)" comment="Partie RMI -BDD et  Swing V4" />
+    <list id="c174b253-4604-417e-a578-1b729820eb10" name="Rejected commit: Default (4)" comment="Partie RMI -BDD et  Swing V5">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projetL-swib/src/main/java/modele_local/ConstructionLists.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projetL-swib/src/main/java/modele_local/ConstructionListsInterface.java" afterPath="" />
+    </list>
+    <ignored path="projetL.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="projetL" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="CreateDataBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/CreateDataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2340">
+              <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1421118677000" expanded="true" signature="1578:1620" placeholder="CREATE SCHEM..IF..." />
+                <marker date="1421118677000" expanded="true" signature="1641:1792" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="1813:2138" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="2159:2426" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="2447:2690" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="2711:2958" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="2979:3338" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="3359:3673" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="3694:3917" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="3938:4210" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="4231:4676" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="4697:4956" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="4977:5347" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="5368:5570" placeholder="CREATE TABLE..IF..." />
+                <marker date="1421118677000" expanded="true" signature="6876:6908" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="6937:6969" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="6998:7043" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="7072:7109" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="7138:7173" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="7202:7232" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="7261:7291" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="7320:7359" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="7388:7425" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="7455:7490" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="7521:7558" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="7588:7626" placeholder="DELETE FROM ..." />
+                <marker date="1421118677000" expanded="true" signature="7656:7692" placeholder="DELETE FROM ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/DAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="32" max-vertical-offset="330">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAOUtilitaire.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/DAOUtilitaire.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1065">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectivityData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/ConnectivityData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="615">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractDAOObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/AbstractDAOObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="360">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HandlerDataBase.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/HandlerDataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="15.0" vertical-offset="1065" max-vertical-offset="6045">
+              <caret line="379" column="78" selection-start-line="379" selection-start-column="78" selection-end-line="379" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ICreateDataBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/ICreateDataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="375">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormationDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/FormationDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="840">
+              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getInstance#0;class#FormationDAO#0" expanded="false" />
+                <element signature="method#insertFormation#0;class#FormationDAO#0" expanded="false" />
+                <element signature="method#existFormations#0;class#FormationDAO#0" expanded="false" />
+                <element signature="method#getIdFormationByContent#0;class#FormationDAO#0" expanded="false" />
+                <marker date="1421073165000" expanded="true" signature="945:1014" placeholder="INSERT INTO ..." />
+                <marker date="1421073165000" expanded="true" signature="1434:1472" placeholder="SELECT * FRO..FORMATION..." />
+                <marker date="1421073165000" expanded="true" signature="2017:2093" placeholder="SELECT idFor..Formation..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerThematique.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerThematique.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1365">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ConnexionInterface.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/controller/FinQcmInterface.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/modele_traitement/HandlerObjectInterface.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/IFormationDAO.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/app/HandlerDataBase.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/views/QcmView.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/views/Thematique.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/pom.xml" />
+        <option value="$PROJECT_DIR$/projetL-struts/src/main/webapp/WEB-INF/Accueil.jsp" />
+        <option value="$PROJECT_DIR$/projetL-struts/src/main/java/qcmActions/Connexion.java" />
+        <option value="$PROJECT_DIR$/projetL-struts/src/main/java/qcmActions/ThematiqueAction.java" />
+        <option value="$PROJECT_DIR$/projetL-struts/src/main/java/qcmActions/Qcm.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerFinQcm.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/views/Connexion.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/IQuestionDAO.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/IResultDAO.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/modele/ResultSession.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/rmi/InitRemoteService.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/ResultDAO.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/modele_traitement/HandlerObject.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerScore.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/views/ScoreViewInterface.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/views/ScoreView.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/views/ChronometrePanel.java" />
+        <option value="$PROJECT_DIR$/projetL-struts/src/main/java/qcmActions/Home.java" />
+        <option value="$PROJECT_DIR$/projetL-struts/src/main/java/qcmActions/HomeAdmin.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/IThematiqueDAO.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/IUsersDAO.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/modele/Questionnaire.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/QuestionnaireDAO.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/FormationDAO.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/modele/UserInterface.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/modele/User.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/modele/ScoreInterface.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/modele/Score.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/modele/ThematiqueInterface.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/modele/Thematique.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/views/FinQcmViewInterface.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/views/FinQcmView.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerQCM.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/QuestionDAO.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerConnexion.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/rmi/QcmServiceInterface.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/rmi/QcmService.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/CreateDataBase.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/modele_local/ValidationForm.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/HandlerDataBase.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/ThematiqueDAO.java" />
+        <option value="$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerThematique.java" />
+        <option value="$PROJECT_DIR$/projetL-modele/src/main/java/dao/UserDAO.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Documents/MyApplications/apache-maven-3.2.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="693" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issues</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issues</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Numeric issues</id>
+          </State>
+          <State>
+            <id>Probable bugs</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>SonarQube</id>
+          </State>
+          <State>
+            <id>TestNG</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-swib" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-swib" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-swib" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-swib" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-swib" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-modele" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-modele" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-modele" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-modele" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmi" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-modele" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-modele" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modele" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-modele" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetL-modele" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Rapport Ihù" />
+    <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="70" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5" value="5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;son&#9;null&#9;null&#10;sonar&#9;ACTION&#9;ActivateSonarQubeToolWindow&#10;setti&#9;ACTION&#9;FileMainSettingsGroup&#10;settings&#9;ACTION&#9;Database.Settings" />
+    <property name="restartRequiresConfirmation" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="modele" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projetL-swib/src/main/java/images" />
+      <recent name="$PROJECT_DIR$/projetL-swib/images" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/java/qcmActions/Qcm.java</PATH>
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/java/qcmActions/Connexion.java</PATH>
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/webapp/WEB-INF/Accueil.jsp</PATH>
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/webapp/WEB-INF/etudiant/finQcm.jsp</PATH>
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/webapp/WEB-INF/etudiant/Head.jsp</PATH>
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/webapp/images/4.jpg</PATH>
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/webapp/images/6.jpg</PATH>
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/webapp/css/animation.css</PATH>
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/webapp/css/style.css</PATH>
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/resources/struts.xml</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/webapp/WEB-INF/etudiant/qcm.jsp</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+            <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-struts/src/main/webapp/WEB-INF/etudiant/test.jsp</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+          <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-modele/src/main/java/modele/main.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+          <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/HandlerDataBase.java</PATH>
+          <PATH vcs="svn" revision="139">$PROJECT_DIR$/projetL-modele/src/main/java/dao/UserDAO.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="projetL-modele" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConnexionView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="connexionView.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="connexionView.ConnexionView" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="projetL-swing" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="projetL-swing" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="modele.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="modele.main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="projetL-modele" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="false" name="installationModele" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="compile" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
+      </method>
+    </configuration>
+    <configuration default="false" name="Lancement" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.56" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="projetL-struts:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/projetL" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_projetL" />
+        <option name="JNDI_PORT" value="10759" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49635" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="projetL-struts:war" />
+        </option>
+      </method>
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ConnexionView" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="3" class="java.lang.String" itemvalue="Application.main" />
+      <item index="4" class="java.lang.String" itemvalue="Maven.installationModele" />
+      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.Lancement" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ConnexionView" />
+        <item index="2" class="java.lang.String" itemvalue="Application.main" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration" myUseAcceleration="nothing" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$/projetL-swib" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/projetL-swib" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4627015-26e8-40f9-8e67-ca863c23b827" name="Default" comment="" />
+      <changelist id="63a1c88c-d41b-48ae-849a-1bb5191d33c0" name="New changelist" comment="" />
+      <created>1414154838839</created>
+      <updated>1414154838839</updated>
+      <workItem from="1414154843854" duration="2401000" />
+      <workItem from="1415025189431" duration="129000" />
+      <workItem from="1415025786637" duration="921000" />
+      <workItem from="1415027437059" duration="2642000" />
+      <workItem from="1416058532075" duration="6662000" />
+      <workItem from="1416066225263" duration="19763000" />
+      <workItem from="1416140299757" duration="11780000" />
+      <workItem from="1416175376104" duration="5250000" />
+      <workItem from="1416226446669" duration="4098000" />
+      <workItem from="1416336001536" duration="8978000" />
+      <workItem from="1416401118849" duration="3186000" />
+      <workItem from="1416431159331" duration="718000" />
+      <workItem from="1416478729941" duration="793000" />
+      <workItem from="1416519202257" duration="2737000" />
+      <workItem from="1416602817074" duration="1229000" />
+      <workItem from="1417175309044" duration="36696000" />
+      <workItem from="1417389451828" duration="2976000" />
+      <workItem from="1417541766228" duration="5868000" />
+      <workItem from="1417789559530" duration="3677000" />
+      <workItem from="1417793371016" duration="2018000" />
+      <workItem from="1417821214029" duration="203000" />
+      <workItem from="1418123745297" duration="3684000" />
+      <workItem from="1418136901549" duration="767000" />
+      <workItem from="1418138075144" duration="8329000" />
+      <workItem from="1418584954657" duration="1119000" />
+      <workItem from="1419327240764" duration="2302000" />
+      <workItem from="1419367540627" duration="12365000" />
+      <workItem from="1419383369317" duration="986000" />
+      <workItem from="1419384658304" duration="643000" />
+      <workItem from="1419385332913" duration="1054000" />
+      <workItem from="1419419135357" duration="804000" />
+      <workItem from="1419419953271" duration="304000" />
+      <workItem from="1419420525399" duration="566000" />
+      <workItem from="1419421464371" duration="1044000" />
+      <workItem from="1419422710061" duration="937000" />
+      <workItem from="1419424096304" duration="451000" />
+      <workItem from="1419424726596" duration="1461000" />
+      <workItem from="1419426739055" duration="918000" />
+      <workItem from="1419427879204" duration="740000" />
+      <workItem from="1419428813442" duration="2405000" />
+      <workItem from="1419431378238" duration="497000" />
+      <workItem from="1419432075969" duration="849000" />
+      <workItem from="1419462397274" duration="2166000" />
+      <workItem from="1419464717081" duration="1160000" />
+      <workItem from="1419466029041" duration="3104000" />
+      <workItem from="1419512354462" duration="3358000" />
+      <workItem from="1419516177386" duration="2007000" />
+      <workItem from="1419518381889" duration="11090000" />
+      <workItem from="1419636942109" duration="7988000" />
+      <workItem from="1419758905359" duration="10037000" />
+      <workItem from="1419773725971" duration="1699000" />
+      <workItem from="1419775587552" duration="8451000" />
+      <workItem from="1419804254296" duration="979000" />
+      <workItem from="1419805399168" duration="1489000" />
+      <workItem from="1420125486884" duration="3412000" />
+      <workItem from="1420290610388" duration="64000" />
+      <workItem from="1420399905719" duration="2795000" />
+      <workItem from="1420402919340" duration="488000" />
+      <workItem from="1420403578488" duration="1633000" />
+      <workItem from="1420405376448" duration="497000" />
+      <workItem from="1420406048532" duration="259000" />
+      <workItem from="1420406489796" duration="423000" />
+      <workItem from="1420407584398" duration="1416000" />
+      <workItem from="1420409337682" duration="2396000" />
+      <workItem from="1420412413243" duration="681000" />
+      <workItem from="1420413283108" duration="2238000" />
+      <workItem from="1420415768010" duration="559000" />
+      <workItem from="1420449075189" duration="562000" />
+      <workItem from="1420449811165" duration="146000" />
+      <workItem from="1420450128940" duration="2795000" />
+      <workItem from="1420504414497" duration="500000" />
+      <workItem from="1420559497504" duration="24000" />
+      <workItem from="1420798004412" duration="444000" />
+      <workItem from="1420814830125" duration="7444000" />
+      <workItem from="1420824036196" duration="19000" />
+      <workItem from="1420824063697" duration="16480000" />
+      <workItem from="1420888226407" duration="630000" />
+      <workItem from="1420889219176" duration="40922000" />
+      <workItem from="1420946099266" duration="22540000" />
+      <workItem from="1420992552080" duration="11000" />
+      <workItem from="1420992564330" duration="536000" />
+      <workItem from="1420995483635" duration="58879000" />
+    </task>
+    <task id="LOCAL-00001" summary="Projet Creation">
+      <created>1414155893238</created>
+      <updated>1414155893238</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Test 2">
+      <created>1415027543177</created>
+      <updated>1415027543177</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Test 3">
+      <created>1415027879101</created>
+      <updated>1415027879101</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test 3">
+      <created>1415029081101</created>
+      <updated>1415029081101</updated>
+    </task>
+    <task id="LOCAL-00005" summary="delete.idea">
+      <created>1415029354101</created>
+      <updated>1415029354101</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test&#10;&#10;">
+      <created>1415029932101</created>
+      <updated>1415029932101</updated>
+    </task>
+    <task id="LOCAL-00007" summary=" Création du package Views&#10;&#10;">
+      <created>1416058881102</created>
+      <updated>1416058881102</updated>
+    </task>
+    <task id="LOCAL-00008" summary=" Création du package modele&#10;&#10;">
+      <created>1416059803101</created>
+      <updated>1416059803101</updated>
+    </task>
+    <task id="LOCAL-00009" summary="CRÉATION DU BEAN USER&#10;">
+      <created>1416060381100</created>
+      <updated>1416060381100</updated>
+    </task>
+    <task id="LOCAL-00010" summary="CRÉATION DES BEANS : CHOICE - QUESTION - QUESTIONS&#10;">
+      <created>1416060827102</created>
+      <updated>1416060827102</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Modification des champs des beans">
+      <created>1416062043102</created>
+      <updated>1416062043102</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Modification du bean Question &#10;Ajout du Bean Thématique">
+      <created>1416063707101</created>
+      <updated>1416063707101</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Creation des beans ResultSession et Session &#10;">
+      <created>1416064981102</created>
+      <updated>1416064981102</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Creation des beans ResultSession et Session &#10;">
+      <created>1416066370102</created>
+      <updated>1416066370102</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Changement noms de variables dans la vue Connexion">
+      <created>1416069694100</created>
+      <updated>1416069694100</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Définition des controleurs pour la connexion">
+      <created>1416083043101</created>
+      <updated>1416083043101</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Adaptation du controleur à la vue">
+      <created>1416087753101</created>
+      <updated>1416087753101</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Ajout de la dépendence pour la base de donnée H2 dans le pom.xml">
+      <created>1416090927102</created>
+      <updated>1416090927102</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Modifications dans les vues">
+      <created>1416094363150</created>
+      <updated>1416094363150</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Modifications dans les vues">
+      <created>1416098021102</created>
+      <updated>1416098021102</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Ajout du controller QCM ainsi que l'interface et les events sur la vue QCM">
+      <created>1416155697121</created>
+      <updated>1416155697121</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Ajout des controllers sur la vue QCM">
+      <created>1416158062102</created>
+      <updated>1416158062102</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Ajout des controllers sur la vue QCM">
+      <created>1416160460101</created>
+      <updated>1416160460101</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Ajout des controllers sur la vue QCM">
+      <created>1416164864101</created>
+      <updated>1416164864101</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Modifications plus ou moins importantes au niveau de la communication Controlleur - Modele - Vue">
+      <created>1416179173101</created>
+      <updated>1416179173101</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Dernières modifs , l'appli respecte désormais le modele MVC">
+      <created>1416180037101</created>
+      <updated>1416180037101</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Amélioration du code">
+      <created>1416260298197</created>
+      <updated>1416260298197</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Modification du chronomètre, la vue est maintenant capable de changer de question dès que le chrono = 0">
+      <created>1416340874101</created>
+      <updated>1416340874101</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Correction de quelques bugs">
+      <created>1416342366101</created>
+      <updated>1416342366101</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Correction de quelques bugs version 2">
+      <created>1416345771104</created>
+      <updated>1416345771104</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Nettoyage du code ( suppression des unused imports , unused methods ... )">
+      <created>1416346062101</created>
+      <updated>1416346062101</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Nettoyage du code ( suppression des unused imports , unused methods ... )">
+      <created>1416519428171</created>
+      <updated>1416519428171</updated>
+    </task>
+    <task id="LOCAL-00033" summary="teste">
+      <created>1416519517101</created>
+      <updated>1416519517101</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Ajout d'un modele local">
+      <created>1417190860102</created>
+      <updated>1417190860102</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Résolution d'un bug au niveau de la vue Qcm">
+      <created>1417194051101</created>
+      <updated>1417194051101</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Petit nettoyage du code">
+      <created>1417194126102</created>
+      <updated>1417194126102</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Re-Nettoyage">
+      <created>1417194159101</created>
+      <updated>1417194159101</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Amélioration du code, suppression de quelques violations de code , ajout d'interface , résolution d'un bug au niveau du Chronometre">
+      <created>1417260082101</created>
+      <updated>1417260082101</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Ajout d'une classe de validation formulaire et modification de la vue Connexion">
+      <created>1417262091102</created>
+      <updated>1417262091102</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Testing">
+      <created>1417262334101</created>
+      <updated>1417262334101</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Quelques Modifs">
+      <created>1417272847102</created>
+      <updated>1417272847102</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Création des interfaces">
+      <created>1417302812102</created>
+      <updated>1417302812102</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Amélioration du code">
+      <created>1417307293101</created>
+      <updated>1417307293101</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Amélioration Code V2">
+      <created>1417307569101</created>
+      <updated>1417307569101</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Amélioration du code V3">
+      <created>1417307898102</created>
+      <updated>1417307898102</updated>
+    </task>
+    <task id="LOCAL-00046" summary="légère amélioration  du code ( Libération de la mémoire )">
+      <created>1417309175102</created>
+      <updated>1417309175102</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Documentation">
+      <created>1417389760102</created>
+      <updated>1417389760102</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Test">
+      <created>1417543299170</created>
+      <updated>1417543299170</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Création d'interfaces et amélioration du code">
+      <created>1417608569171</created>
+      <updated>1417608569171</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Partie RMI">
+      <created>1418140049157</created>
+      <updated>1418140049157</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Partie RMI">
+      <created>1419432601103</created>
+      <updated>1419432601103</updated>
+    </task>
+    <task id="LOCAL-00052" summary="DAO - RMI">
+      <created>1419529176103</created>
+      <updated>1419529176103</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Partie RMI - Swing">
+      <created>1419796743103</created>
+      <updated>1419796743103</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Partie RMI - Swing">
+      <created>1419797967101</created>
+      <updated>1419797967101</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Partie RMI - Swing">
+      <created>1419797991101</created>
+      <updated>1419797991101</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Partie RMI - Swing">
+      <created>1419798046101</created>
+      <updated>1419798046101</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Partie RMI -BDD et  Swing">
+      <created>1420888309118</created>
+      <updated>1420888309119</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Partie RMI -BDD et  Swing  version 2">
+      <created>1420890100184</created>
+      <updated>1420890100185</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Partie RMI -BDD et  Swing V3">
+      <created>1420906030101</created>
+      <updated>1420906030101</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Partie RMI -BDD et  Swing V4">
+      <created>1420906154102</created>
+      <updated>1420906154102</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Partie RMI -BDD et  Swing V4">
+      <created>1420906175101</created>
+      <updated>1420906175101</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Partie RMI -BDD et  Swing V4">
+      <created>1420906248102</created>
+      <updated>1420906248102</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Partie RMI -BDD et  Swing V4">
+      <created>1420906340101</created>
+      <updated>1420906340101</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Partie RMI -BDD et  Swing V4">
+      <created>1420906363101</created>
+      <updated>1420906363101</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Partie RMI -BDD et  Swing V5">
+      <created>1420990443148</created>
+      <updated>1420990443148</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Partie RMI -BDD et  Swing V5">
+      <created>1420990463101</created>
+      <updated>1420990463101</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Partie RMI -BDD et  Swing V5">
+      <created>1420990565102</created>
+      <updated>1420990565102</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Partie RMI -BDD et  Swing V5">
+      <created>1420990583101</created>
+      <updated>1420990583101</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Partie RMI -BDD et  Swing V5">
+      <created>1420990601102</created>
+      <updated>1420990601102</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Partie RMI -BDD et  Swing V5">
+      <created>1420990620101</created>
+      <updated>1420990620101</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Partie RMI -BDD et  Swing V5">
+      <created>1420990646100</created>
+      <updated>1420990646101</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Partie RMI -BDD et  Swing V5">
+      <created>1420990674101</created>
+      <updated>1420990674101</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Partie RMI -BDD et  Swing V5">
+      <created>1420990698101</created>
+      <updated>1420990698102</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Partie RMI -BDD et  Swing">
+      <created>1420990723101</created>
+      <updated>1420990723102</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Partie RMI -BDD et  Swing V7">
+      <created>1421001860104</created>
+      <updated>1421001860104</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Partie RMI -BDD et  Swing V7">
+      <created>1421001885101</created>
+      <updated>1421001885101</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Partie RMI -BDD et  Swing V7">
+      <created>1421001939101</created>
+      <updated>1421001939102</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Partie RMI -BDD et  Swing V7">
+      <created>1421001994101</created>
+      <updated>1421001994102</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Partie RMI -BDD et  Swing V7">
+      <created>1421002067101</created>
+      <updated>1421002067102</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Partie RMI -BDD et  Swing V7">
+      <created>1421002124101</created>
+      <updated>1421002124101</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Partie RMI -BDD et  Swing V8">
+      <created>1421015194101</created>
+      <updated>1421015194101</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Partie RMI -BDD et  Swing V7">
+      <created>1421015358101</created>
+      <updated>1421015358102</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Partie RMI -BDD et  Swing V7">
+      <created>1421015402102</created>
+      <updated>1421015402102</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Partie RMI -BDD et  Swing V7">
+      <created>1421015471101</created>
+      <updated>1421015471101</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="387271000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="22" width="1280" height="693" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.036605656" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1514143" sideWeight="0.41033927" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26289517" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32229403" sideWeight="0.49872124" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41930115" sideWeight="0.58966076" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32612312" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39849624" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26332796" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29617304" sideWeight="0.54846525" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26332796" sideWeight="0.50127876" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32973805" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Résolution d'un bug au niveau de la vue Qcm" />
+    <MESSAGE value="Petit nettoyage du code" />
+    <MESSAGE value="Re-Nettoyage" />
+    <MESSAGE value="Amélioration du code, suppression de quelques violations de code , ajout d'interface , résolution d'un bug au niveau du Chronometre" />
+    <MESSAGE value="Ajout d'une classe de validation formulaire et modification de la vue Connexion" />
+    <MESSAGE value="Testing" />
+    <MESSAGE value="Quelques Modifs" />
+    <MESSAGE value="Création des interfaces" />
+    <MESSAGE value="Amélioration du code" />
+    <MESSAGE value="Amélioration Code V2" />
+    <MESSAGE value="Amélioration du code V3" />
+    <MESSAGE value="légère amélioration  du code ( Libération de la mémoire )" />
+    <MESSAGE value="Documentation" />
+    <MESSAGE value="Test" />
+    <MESSAGE value="Création d'interfaces et amélioration du code" />
+    <MESSAGE value="Partie RMI" />
+    <MESSAGE value="DAO - RMI" />
+    <MESSAGE value="Partie RMI - Swing" />
+    <MESSAGE value="Partie RMI -BDD et  Swing  version 2" />
+    <MESSAGE value="Partie RMI -BDD et  Swing V3" />
+    <MESSAGE value="Partie RMI -BDD et  Swing V4" />
+    <MESSAGE value="Partie RMI -BDD et  Swing" />
+    <MESSAGE value="Partie RMI -BDD et  Swing V5" />
+    <MESSAGE value="Partie RMI -BDD et  Swing V8" />
+    <MESSAGE value="Partie RMI -BDD et  Swing V7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Partie RMI -BDD et  Swing V7" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-wildcard-method">
+          <properties class="UserDAO" method="getUserByInformations" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="14" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/views/Thematique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1585" max-vertical-offset="2055">
+          <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/Administrateur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1140">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/ResultDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1125">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getInstance#0;class#ResultDAO#0" expanded="false" />
+            <element signature="method#addScoreQuestion#0;class#ResultDAO#0" expanded="false" />
+            <element signature="method#getScoreByQcm#0;class#ResultDAO#0" expanded="false" />
+            <element signature="method#getIdSessionByQcm#0;class#ResultDAO#0" expanded="false" />
+            <element signature="method#addQcmResult#0;class#ResultDAO#0" expanded="false" />
+            <element signature="method#getFinalResultQcm#0;class#ResultDAO#0" expanded="false" />
+            <marker date="1421006086000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1421006086000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Score..." />
+            <marker date="1421006086000" expanded="true" signature="-1:-1" placeholder="SELECT idSes..SessionQCM..." />
+            <marker date="1421006086000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1421006086000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ResultatSessionQCM..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/IUsersDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/Questionnaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="765">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#945#955#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/controller/QCMInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="585">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/IQuestionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="182" max-vertical-offset="690">
+          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="37" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/UserInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/ScoreInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/ThematiqueInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/Thematique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1095">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/views/FinQcmViewInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/views/FinQcmView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/Choice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele_traitement/HandlerObjectInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="675">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele_traitement/HandlerObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+          <folding>
+            <element signature="method#getThematiquesContent#0;class#HandlerObject#0" expanded="false" />
+            <element signature="method#getIdThematiqueByContent#0;class#HandlerObject#0" expanded="false" />
+            <element signature="method#getMeanQcm#0;class#HandlerObject#0" expanded="false" />
+            <element signature="method#getClassement#0;class#HandlerObject#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-projetL-swing">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-projetL-swing</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-projetL-swing</node>
+            <node x="" y="">mdl-projetL-modele</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="93.0" y="54.0" />
+          <SelectedNodes />
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/controller">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>controller</OriginalElement>
+          <nodes>
+            <node x="" y="">controller.ControllerConnexion</node>
+            <node x="" y="">controller.ControllerQCM</node>
+            <node x="" y="">controller.ThematiqueInterface</node>
+            <node x="" y="">controller.ConnexionInterface</node>
+            <node x="" y="">controller.ScoreInterface</node>
+            <node x="" y="">controller.FinQcmInterface</node>
+            <node x="" y="">controller.ControllerScore</node>
+            <node x="" y="">controller.QCMInterface</node>
+            <node x="" y="">controller.ControllerFinQcm</node>
+            <node x="" y="">controller.ControllerThematique</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9" x="776.1111111111111" y="496.1111111111111" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">resources</node>
+            <node x="" y="">freemarker</node>
+            <node x="" y="">com</node>
+            <node x="" y="">javassist</node>
+            <node x="" y="">modele</node>
+            <node x="" y="">netscape</node>
+            <node x="" y="">oracle</node>
+            <node x="" y="">org</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">exceptions</node>
+            <node x="" y="">Main</node>
+            <node x="" y="">modele_traitement</node>
+            <node x="" y="">sunw</node>
+            <node x="" y="">javax</node>
+            <node x="" y="">fr</node>
+            <node x="" y="">toolbarButtonGraphics</node>
+            <node x="" y="">config-browser</node>
+            <node x="" y="">template</node>
+            <node x="" y="">classes</node>
+            <node x="" y="">templates</node>
+            <node x="" y="">junit</node>
+            <node x="" y="">modele_local</node>
+            <node x="" y="">WrapperGenerator</node>
+            <node x="" y="">HTMLConverter</node>
+            <node x="" y="">javafx</node>
+            <node x="" y="">META-INF</node>
+            <node x="" y="">ckeditor</node>
+            <node x="" y="">ognl</node>
+            <node x="" y="">dao</node>
+            <node x="" y="">apple</node>
+            <node x="" y="">views</node>
+            <node x="" y="">images</node>
+            <node x="" y="">java</node>
+            <node x="" y="">jdk</node>
+            <node x="" y="">qcmActions</node>
+            <node x="" y="">controller</node>
+            <node x="" y="">rmi</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6377622377622377" x="359.76864035087726" y="678.4758771929825" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1695">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="690">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/IFormationDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/IResultDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="630">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/IThematiqueDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="405">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/rmi/InitRemoteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="705">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/rmi/QcmServiceInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3461537" vertical-offset="596" max-vertical-offset="1050">
+          <caret line="53" column="95" selection-start-line="53" selection-start-column="95" selection-end-line="53" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/controller/FinQcmInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/QuestionnaireDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2153" max-vertical-offset="3585">
+          <caret line="201" column="10" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#410#420#0" expanded="true" />
+            <element signature="e#729#737#0" expanded="true" />
+            <element signature="e#1723#1731#0" expanded="true" />
+            <element signature="e#2716#2724#0" expanded="true" />
+            <element signature="e#3640#3650#0" expanded="true" />
+            <element signature="e#3968#3976#0" expanded="true" />
+            <element signature="e#4983#4991#0" expanded="true" />
+            <element signature="e#7997#8012#0" expanded="true" />
+            <element signature="method#testing2#0;class#QuestionnaireDAO#0" expanded="false" />
+            <element signature="e#8518#8528#0" expanded="true" />
+            <element signature="e#8809#8817#0" expanded="true" />
+            <element signature="e#9707#9715#0" expanded="true" />
+            <element signature="e#10604#10612#0" expanded="true" />
+            <element signature="e#11436#11446#0" expanded="true" />
+            <element signature="e#11744#11752#0" expanded="true" />
+            <element signature="e#12687#12695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerFinQcm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="654" max-vertical-offset="1080">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/controller/ConnexionInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/modele_local/ValidationForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/QuestionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="951" max-vertical-offset="1395">
+          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getInstance#0;class#QuestionDAO#0" expanded="false" />
+            <element signature="method#addQcm#0;class#QuestionDAO#0" expanded="false" />
+            <element signature="method#getMax#0;class#QuestionDAO#0" expanded="false" />
+            <element signature="method#getMaxQcmByLevel#0;class#QuestionDAO#0" expanded="false" />
+            <element signature="method#getQuestionsByThematique#0;class#QuestionDAO#0" expanded="false" />
+            <element signature="method#hasResponded#0;class#QuestionDAO#0" expanded="false" />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..QCM..." />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..Question..." />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..QCM..." />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..QCM..." />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..QCM..." />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Choix..." />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1421110250000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Score..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/rmi/QcmService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1150" max-vertical-offset="1680">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="method#init#0;class#QcmService#0" expanded="false" />
+            <element signature="method#getThematiquesByLevel#0;class#QcmService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/modele/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1020">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/ThematiqueDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="2730">
+          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#862#874#0" expanded="true" />
+            <element signature="e#1143#1155#0" expanded="true" />
+            <element signature="method#getInstance#0;class#ThematiqueDAO#0" expanded="false" />
+            <element signature="method#thematiqueExists#0;class#ThematiqueDAO#0" expanded="false" />
+            <element signature="method#addThematique#0;class#ThematiqueDAO#0" expanded="false" />
+            <element signature="method#getThematiquesByLevel#0;class#ThematiqueDAO#0" expanded="false" />
+            <element signature="e#6551#6563#0" expanded="true" />
+            <marker date="1421128929000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Thematique..." />
+            <marker date="1421128929000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1421128929000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Thematique..." />
+            <marker date="1421128929000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(Q..SessionQCM..." />
+            <marker date="1421128929000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Qcm..." />
+            <marker date="1421128929000" expanded="true" signature="-1:-1" placeholder="SELECT idThe..Thematique..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1330" max-vertical-offset="3840">
+          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#876#882#0" expanded="true" />
+            <marker date="1421134612000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ETUDIANT..." />
+            <marker date="1421134612000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1421134612000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1421134612000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1421134612000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..Utilisateur..." />
+            <marker date="1421134612000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..Enseignant..." />
+            <marker date="1421134612000" expanded="true" signature="-1:-1" placeholder="SELECT idUti..Utilisateur..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerConnexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="496" max-vertical-offset="960">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerQCM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1680">
+          <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="510">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-swib/src/main/java/controller/ControllerThematique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1365">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/AbstractDAOObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/ConnectivityData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="615">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/CreateDataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1528" max-vertical-offset="2340">
+          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1421118677000" expanded="true" signature="1578:1620" placeholder="CREATE SCHEM..IF..." />
+            <marker date="1421118677000" expanded="true" signature="1641:1792" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="1813:2138" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="2159:2426" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="2447:2690" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="2711:2958" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="2979:3338" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="3359:3673" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="3694:3917" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="3938:4210" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="4231:4676" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="4697:4956" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="4977:5347" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="5368:5570" placeholder="CREATE TABLE..IF..." />
+            <marker date="1421118677000" expanded="true" signature="6876:6908" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="6937:6969" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="6998:7043" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="7072:7109" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="7138:7173" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="7202:7232" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="7261:7291" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="7320:7359" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="7388:7425" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="7455:7490" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="7521:7558" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="7588:7626" placeholder="DELETE FROM ..." />
+            <marker date="1421118677000" expanded="true" signature="7656:7692" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/DAOUtilitaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/ICreateDataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javadoc/controller/ConnexionInterface.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.054622" vertical-offset="3107" max-vertical-offset="3345">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/FormationDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="840">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getInstance#0;class#FormationDAO#0" expanded="false" />
+            <element signature="method#insertFormation#0;class#FormationDAO#0" expanded="false" />
+            <element signature="method#existFormations#0;class#FormationDAO#0" expanded="false" />
+            <element signature="method#getIdFormationByContent#0;class#FormationDAO#0" expanded="false" />
+            <marker date="1421073165000" expanded="true" signature="945:1014" placeholder="INSERT INTO ..." />
+            <marker date="1421073165000" expanded="true" signature="1434:1472" placeholder="SELECT * FRO..FORMATION..." />
+            <marker date="1421073165000" expanded="true" signature="2017:2093" placeholder="SELECT idFor..Formation..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetL-modele/src/main/java/dao/data/HandlerDataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="15.0" vertical-offset="1065" max-vertical-offset="6045">
+          <caret line="379" column="78" selection-start-line="379" selection-start-column="78" selection-end-line="379" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>projetL-struts:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>projetL-modele</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

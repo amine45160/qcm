@@ -1,0 +1,133 @@
+package modele;
+
+import dao.UserDAO;
+
+import java.io.Serializable;
+
+public class User implements Serializable , UserInterface{
+
+    private int id ;
+    private int level ;
+    private String nom ;
+    private String prenom ;
+    private String password ;
+    private String identifiant ;
+
+    public User(){
+
+    }
+
+    public User( int level , String nom , String prenom , String password , String identifiant ){
+        this.level = level ;
+        this.nom = nom ;
+        this.prenom = prenom ;
+        this.password = password;
+        this.identifiant = identifiant;
+    }
+
+    /**
+     * Getter Level
+     * @return int
+     */
+    public int getLevel() {
+        return level;
+    }
+
+    /**
+     * Setter Level
+     * @param level
+     */
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    /**
+     * Getter Identifiant
+     * @return int
+     */
+    public String getIdentifiant() {
+        return identifiant;
+    }
+
+    /**
+     * Setter Identifiant
+     * @param identifiant
+     */
+    public void setIdentifiant(String identifiant) {
+        this.identifiant = identifiant;
+    }
+
+    /**
+     * Getter Password
+     * @return
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * Setter Password
+     * @param password
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    /**
+     * Getter Prenom
+     * @return String
+     */
+    public String getPrenom() {
+        return prenom;
+    }
+
+    /**
+     * Setter Prenom
+     * @param prenom
+     */
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    /**
+     * Getter Nom
+     * @return String
+     */
+    public String getNom() {
+        return nom;
+    }
+
+    /**
+     * Setter Nom
+     * @param nom
+     */
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    /**
+     * Getter Id
+     * @return int
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * Setter Id
+     * @param id
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public static User getUserByInfo(String identifiant , String password){
+        User u = null;
+        try {
+            u = UserDAO.getInstance().getUserByInfo(identifiant , password);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return u ;
+    }
+}

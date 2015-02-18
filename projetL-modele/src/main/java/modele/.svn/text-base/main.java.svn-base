@@ -1,0 +1,13 @@
+package modele;
+
+/**
+ * Created by amineboufatah on 15/11/14.
+ */
+public class main {
+
+    public static void main ( String [] args){
+
+        //ConnexionView views = new ConnexionView();
+        System.out.println("hello");
+    }
+}

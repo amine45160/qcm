@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/ihmL/!svn/ver/139/projetL/projetL-modele/src/main/java/dao/data
+END
+ICreateDataBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ihmL/!svn/ver/122/projetL/projetL-modele/src/main/java/dao/data/ICreateDataBase.java
+END
+AbstractDAOObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ihmL/!svn/ver/97/projetL/projetL-modele/src/main/java/dao/data/AbstractDAOObject.java
+END
+DAOUtilitaire.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ihmL/!svn/ver/97/projetL/projetL-modele/src/main/java/dao/data/DAOUtilitaire.java
+END
+CreateDataBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ihmL/!svn/ver/139/projetL/projetL-modele/src/main/java/dao/data/CreateDataBase.java
+END
+HandlerDataBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ihmL/!svn/ver/138/projetL/projetL-modele/src/main/java/dao/data/HandlerDataBase.java
+END
+DAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ihmL/!svn/ver/104/projetL/projetL-modele/src/main/java/dao/data/DAO.java
+END
+ConnectivityData.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ihmL/!svn/ver/104/projetL/projetL-modele/src/main/java/dao/data/ConnectivityData.java
+END

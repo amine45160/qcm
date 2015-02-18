@@ -1,0 +1,58 @@
+package rmi;
+
+import modele.*;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.util.List;
+
+/**
+ * Created by amineboufatah on 05/12/14.
+ */
+public interface QcmServiceInterface extends Remote {
+
+    public final String serviceName = "QcmService";
+
+    public void init() throws RemoteException;
+
+    public User getUserByInformations(String identifiant , String password) throws RemoteException;
+
+    public List<Thematique> getThematiquesByLevel (int level) throws RemoteException;
+
+    public int getMax() throws RemoteException ;
+
+    public int getMax(int i) throws RemoteException ;
+
+    public List<Question> getQuestionsByThematique(int thematique) throws RemoteException;
+
+    public void addScoreQuestion(int idEtudiant , int idQcm , int idQuestion , int answer) throws RemoteException ;
+
+    public void addQcm(int idEnseignant , int thematique , List<Question> questions) throws RemoteException ;
+
+    public List<Score> getScoreByQcm(int idQcm , int idUser)throws RemoteException ;
+
+    public List<Thematique> getLaunchedThematiques(int level) throws RemoteException ;
+
+    public void launchQcm(int idQcm) throws RemoteException ;
+
+    public int getMaxByLevel(int thematique) throws RemoteException;
+
+    public int getIdSessionByQcm(int idQcm) throws RemoteException;
+
+    public void addQcmResult(int idSession , int idUser , double resultat) throws RemoteException;
+
+    public int getIdThematiqueByContent ( String content ) throws RemoteException;
+
+    public void addEtudiant(String identifiant) throws RemoteException;
+
+    public boolean hasResponded(int idUser , int idQcm) throws RemoteException;
+
+    public int getMaxQcmByLevel(int thematique) throws RemoteException;
+
+    public List<Integer> getFinalResultQcm(int idQcm) throws RemoteException;
+
+    public boolean thematiqueExists(String content) throws RemoteException;
+
+    public int getIdFormationByContent(String content) throws RemoteException;
+
+    }

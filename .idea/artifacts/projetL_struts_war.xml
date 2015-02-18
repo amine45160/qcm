@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="projetL-struts:war">
+    <output-path>$PROJECT_DIR$/projetL-struts/target</output-path>
+    <root id="archive" name="projetL-struts-1.0.war">
+      <element id="artifact" artifact-name="projetL-struts:war exploded" />
+    </root>
+  </artifact>
+</component>

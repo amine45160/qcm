@@ -1,0 +1,83 @@
+10
+
+dir
+139
+https://orleans.miage.fr/svn/ihmL/projetL/projetL-struts/src/main/webapp
+https://orleans.miage.fr/svn/ihmL
+
+
+
+2015-01-11T21:13:10.239097Z
+138
+abdelhakim.belmeknas
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+02e63955-9651-4593-a780-4d74426bf0ac
+
+
+
+
+
+
+
+
+((conflict example dir update deleted deleted (version https://orleans.miage.fr/svn/ihmL 2 93 projetL/projetL-struts/src/main/webapp/example 0 ) (version https://orleans.miage.fr/svn/ihmL 3 102 projetL/projetL-struts/src/main/webapp/example none)))
+
+WEB-INF
+dir
+
+css
+dir
+
+images
+dir
+
+index.html
+file
+
+
+
+
+2015-01-11T15:35:13.000000Z
+b4b0720a84f746a52b4c8473aa97302f
+2015-01-11T15:04:37.030933Z
+121
+abdelhakim.belmeknas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+353
+
+js
+dir
+

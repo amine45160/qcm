@@ -1,0 +1,56 @@
+package modele_local;
+
+import modele.Thematique;
+import modele.Thematiques;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by amineboufatah on 25/12/14.
+ */
+public class ConstructionLists implements ConstructionListsInterface {
+
+    /**
+     * Default Constructor
+     */
+    public ConstructionLists(){
+
+    }
+
+    /**
+     * This method returns a List of Strings composed of Thematiques content
+     * @param thematiquesModele
+     * @param level
+     * @return
+     */
+    public List getThematiquesContent(Thematiques thematiquesModele , int level) {
+        List<String> contents = new ArrayList<String>();
+        for (Object thematique : thematiquesModele.getThematiques()) {
+            Thematique theme = (Thematique) thematique;
+            if (theme.getLevel()==level) {
+                contents.add(theme.getNom());
+            }
+        }
+        return contents;
+    }
+
+    public List getThematiquesContent(List<Thematique> thematiquesModele ) {
+        List<String> contents = new ArrayList<String>();
+        for (Thematique thematique : thematiquesModele) {
+                contents.add(thematique.getNom());
+            }
+        return contents;
+    }
+
+
+
+    public int getIdThematiqueByContent(List<Thematique> thematiqueList, String content) {
+        for(Thematique thematique : thematiqueList){
+            if(thematique.getNom().equals(content)){
+                return thematique.getLevel();
+            }
+        }
+             return -1 ;
+    }
+}

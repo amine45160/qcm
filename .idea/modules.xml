@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/projetL.iml" filepath="$PROJECT_DIR$/projetL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetL.iml" filepath="$PROJECT_DIR$/projetL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetL.iml" filepath="$PROJECT_DIR$/projetL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetL-modele/projetL-modele.iml" filepath="$PROJECT_DIR$/projetL-modele/projetL-modele.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetL-modele/projetL-modele.iml" filepath="$PROJECT_DIR$/projetL-modele/projetL-modele.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetL-struts/projetL-struts.iml" filepath="$PROJECT_DIR$/projetL-struts/projetL-struts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetL-struts/projetL-struts.iml" filepath="$PROJECT_DIR$/projetL-struts/projetL-struts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetL-swib/projetL-swing.iml" filepath="$PROJECT_DIR$/projetL-swib/projetL-swing.iml" />
+    </modules>
+  </component>
+</project>
+
